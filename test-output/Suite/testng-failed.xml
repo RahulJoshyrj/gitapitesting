@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner1(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.crm.Vtiger_OrgasnisationModule.Creat_organisaationWithIndustryandTypeTest">
+        <methods>
+          <include name="loginToAppln"/>
+          <include name="createOrganisationWithIndustryType"/>
+          <include name="dbConfig"/>
+          <include name="launchTheBrowser"/>
+          <include name="logoutFromAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="closeDBconfig"/>
+        </methods>
+      </class> <!-- com.crm.Vtiger_OrgasnisationModule.Creat_organisaationWithIndustryandTypeTest -->
+    </classes>
+  </test> <!-- TestRunner1(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner2(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.VtigerLoginPageTest.vtiger_login_propertyfile">
+        <methods>
+          <include name="loginToAppln"/>
+          <include name="dbConfig"/>
+          <include name="launchTheBrowser"/>
+          <include name="vtiger_Login_propertyfileTest"/>
+          <include name="logoutFromAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="closeDBconfig"/>
+        </methods>
+      </class> <!-- com.crm.VtigerLoginPageTest.vtiger_login_propertyfile -->
+    </classes>
+  </test> <!-- TestRunner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
